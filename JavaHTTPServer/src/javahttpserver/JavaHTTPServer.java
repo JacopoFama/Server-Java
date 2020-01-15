@@ -193,6 +193,8 @@ public class JavaHTTPServer implements Runnable{
 			return "text/html";
                 else if (fileRequested.endsWith(".css"))
                         return "text/css";
+                else if (fileRequested.endsWith(".xml"))
+                        return "text/xml";
 		else
 			return "text/plain";
 	}
